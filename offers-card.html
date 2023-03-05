@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers Card</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Libre Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="blur">
+        <div class="header">
+            <a href="#" title="Home">
+                <h1>Flight</h1>
+            </a>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Destination</a></li>
+                <li>
+                    <a href="#">
+                        <label class="switch" title="Change Mode">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </a>
+                </li>
+                <li><a href="#" onclick="inToggle()"><button>sign in</button></a></li>
+            </ul>
+        </div>
+
+        <div class="container offers-card">
+            <div class="place">
+                <div class="caption">
+                    <h2>Dubai, Arrab</h2>
+                </div>
+                <div class="block">
+                    <div class="image">
+                        <img src="/assets/imges/offers-images/dubai.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="name">
+                            <h4>Dubai, Arrab</h4>
+                        </div>
+                        <div class="rate_block">
+                            <p><i class="fa-solid fa-location-dot"></i> The Palm Jumeirah - Dubai - United Arab Emirates
+                            </p>
+                            <span class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                            <span class="rate_star">5 star hotel</span>
+                            <span class="aminities">
+                                <i class="fa-sharp fa-solid fa-mug-hot"></i>
+                                <span>20+ aminities</span>
+                            </span>
+                            <div class="rate_point">
+                                <span class="point">4.2</span>
+                                <span class="rate">very good</span>
+                                <span class="reviews">371 reviews</span>
+                            </div>
+                        </div>
+                        <div class="time_flight">
+                            <div class="start">
+                                <h5>12:00 pm</h5>
+                                <p>Phnom Penh(PNH)</p>
+                            </div>
+                            <div class="plane_img">
+                                <img src="/assets/imges/offers-images/plane.png" alt="">
+                            </div>
+                            <div class="end">
+                                <h5>12:00 pm</h5>
+                                <p>Denpasar(DPS)</p>
+                            </div>
+                        </div>
+                        <div class="time_flight_spend">
+                            <h5>12h 00mm</h5>
+                        </div>
+                        <div class="card">
+                            <div class="user-type">
+                                <div class="user">
+                                    <div class="image">
+                                        <img src="assets/imges/offers-images/user.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h6>Unknown User</h6>
+                                        <p>Boarding Pass N'123</p>
+                                    </div>
+                                </div>
+                                <div class="type">
+                                    <h6>Business Class</h6>
+                                </div>
+                            </div>
+                            <div class="card-detail">
+                                <div class="option">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <div class="title">
+                                        <p>Date</p>
+                                        <p>Newark(EWR)</p>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div class="title">
+                                        <p>Flight time</p>
+                                        <p>12:00</p>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="icon">
+                                        <i class="fa-sharp fa-solid fa-door-closed"></i>
+                                    </div>
+                                    <div class="title">
+                                        <p>Gate</p>
+                                        <p>A12</p>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-wheelchair"></i>
+                                    </div>
+                                    <div class="title">
+                                        <p>Seat</p>
+                                        <p>12B</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dps-barcode">
+                                <div class="dps">
+                                    <h4>DPS</h4>
+                                    <p>ABC12345</p>
+                                </div>
+                                <div class="barcode">
+                                    <p>123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Hotel -->
+            <div class="booking-hotel">
+                <div class="caption">
+                    <h2>booking hotel</h2>
+                </div>
+                <div class="block">
+                    <div class="image">
+                        <img src="/assets/imges/offers-images/dubai.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="name_and_price">
+                            <div class="name">
+                                <h5>CVK Park Bosphorus Hotel Istanbul</h5>
+                            </div>
+                            <div class="price">
+                                <p>starting from</p>
+                                <h5>$240/night</h5>
+                                <p>excl. tax</p>
+                            </div>
+                        </div>
+                        <div class="rate_block">
+                            <p><i class="fa-solid fa-location-dot"></i> The Palm Jumeirah - Dubai - United Arab Emirates
+                            </p>
+                            <span class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                            <span class="rate_star">5 star hotel</span>
+                            <span class="aminities">
+                                <i class="fa-sharp fa-solid fa-mug-hot"></i>
+                                <span>20+ aminities</span>
+                            </span>
+                            <div class="rate_point">
+                                <span class="point">4.2</span>
+                                <span class="rate">very good</span>
+                                <span class="reviews">371 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="selected">
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                            <button class="select">View Place</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="image">
+                        <img src="/assets/imges/offers-images/dubai.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="name_and_price">
+                            <div class="name">
+                                <h5>CVK Park Bosphorus Hotel Istanbul</h5>
+                            </div>
+                            <div class="price">
+                                <p>starting from</p>
+                                <h5>$104/night</h5>
+                                <p>excl. tax</p>
+                            </div>
+                        </div>
+                        <div class="rate_block">
+                            <p><i class="fa-solid fa-location-dot"></i> The Palm Jumeirah - Dubai - United Arab Emirates
+                            </p>
+                            <span class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                            <span class="rate_star">5 star hotel</span>
+                            <span class="aminities">
+                                <i class="fa-sharp fa-solid fa-mug-hot"></i>
+                                <span>20+ aminities</span>
+                            </span>
+                            <div class="rate_point">
+                                <span class="point">4.2</span>
+                                <span class="rate">very good</span>
+                                <span class="reviews">371 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="selected">
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                            <button class="select">View Place</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_logo">
+                <a href="#"><img src="assets/imges/logofooter.png" alt=""></a>
+            </div>
+            <div class="our_destination">
+                <h4>Our Destination</h4>
+                <ul>
+                    <li>Cambodia</li>
+                    <li>Thailand</li>
+                    <li>Indonesia</li>
+                    <li>Arrab</li>
+                </ul>
+            </div>
+            <div class="about_us">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Team</a>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="follow_us">
+                <h4>Follow Us</h4>
+                <div>
+                    <a href="#"><img src="assets/imges/facebook.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/ig.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/tw.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/tiktok.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/whatsapp.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/line.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/telegram.png" alt=""></a>
+                    <a href="#"><img src="assets/imges/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h5>2023 © - all rights reserved </h5>
+        </div>
+    </div>
+
+    <!-- Sign In (Popup) -->
+    <div id="sign_in_popup">
+        <div class="popBox">
+            <label for="" class="lbl"><i class="fa-solid fa-xmark" onclick="inToggle()"></i></label>
+            <img src="/assets/imges/plane.png" alt="" class="image_plane">
+            <img src="/assets/imges/orange_wave.svg" alt="" class="image_wave">
+            <div>
+                <h3>Sign In</h3>
+                <p>Sign in and start booking for your dream travel</p>
+                <form action="" method="post">
+                    <div class="inputBox">
+                        <input type="text" name="" id="" required="required" placeholder="Login">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="" id="" required="required" placeholder="Password">
+                    </div>
+                    <div class="checkout">
+                        <div>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for=""> Remember Me</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Login">
+                    </div>
+                </form>
+                <p class="new_member">If New Member <a href="#" onclick="upToggle()" id="btnSignUp">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up (Popup) -->
+    <div id="sign_up_popup">
+        <div class="popBox">
+            <label for="" class="lbl"><i class="fa-solid fa-xmark" id="close_sign_up"
+                    onclick="upToggle();inToggle();"></i></label>
+            <img src="/assets/imges/plane.png" alt="" class="image_plane">
+            <img src="/assets/imges/orange_wave.svg" alt="" class="image_wave">
+            <div>
+                <h3>Sign Up</h3>
+                <form action="" method="post">
+                    <div class="name">
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required="required" placeholder="First Name"
+                                autocomplete="none">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required="required" placeholder="Last Name"
+                                autocomplete="none">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="inputBox">
+                            <input type="email" name="" id="" required="required" placeholder="Gmail">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required="required" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="" id="" required="required" placeholder="Password">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="" id="" required="required" placeholder="Confirm Password">
+                    </div>
+                    <div class="checkout">
+                        <div>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for=""> I agree to all the <a href="#"
+                                    style="text-decoration: underline; font-weight: bold;">Terms</a> and <a href="#"
+                                    style="text-decoration: underline; font-weight: bold;">Privacy Policies</a></label>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Sign Up">
+                    </div>
+                </form>
+                <p class="new_member">Already have an account? <a href="#" onclick="upToggle()">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
